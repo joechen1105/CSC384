@@ -1,0 +1,5 @@
+1.	Use numpy and scipy as much as you can, because it can improve the computation productivity. Matrix implementation can replace most of iterable date types.
+2.	Be familiar with the Search algorithm and SokobanState that is extended from State provided. It will help you understand both anytime heuristic functions.
+3.	The simple Manhattan distance is useless, simply return 0 in the alternative heuristic can solve the same number of problems by brutal searching. Do not count on it.
+4.	When writing the alternative heuristic, try not to use to much “loops” and “if” statements, it slows the program up. The indexes of box and storage are extremely helpful if you want to get full marks, since you can limite box to its designated storage
+5.	The best way to find all the dead locks is to “pull” from each storage, the coordinates that cannot be reached are the dead position, it can significantly cut the braches. Other way is to find general deadlocks, which are when box at the corner, two boxes in a row beside the wall and four boxes to from a square.
